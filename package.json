@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "connect": "./scripts/connect.sh",
-    "deploy": "yarn connect \"bash /home/ubuntu/scripts/deploy.sh\""
+    "deploy": "ssh -i ./src/config/lazy-student.pem $LAZYSTUDENTCLIENT \"bash /home/ubuntu/scripts/deploy.sh\""
   },
   "eslintConfig": {
     "extends": "react-app"
