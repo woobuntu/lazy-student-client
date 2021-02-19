@@ -1,0 +1,135 @@
+@media (min-width: 376px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .private_body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+  }
+  .private_top {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .toHome {
+    font-size: 1.5rem;
+    width: 7rem;
+    text-decoration: none;
+    color: black;
+  }
+  .toHome:hover {
+    font-weight: bold;
+  }
+
+  .private_middle_mobile {
+    display: none;
+  }
+  .private_middle_laptop {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .private_middle_search {
+    width: 100%;
+    height: 3rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .private_middle_search input {
+    width: 20%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .private_middle_laptop_align {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .private_middle_laptop_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    font-size: 2rem;
+  }
+  .private_middle_laptop_done {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .private_middle_laptop_yet {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  .overflow {
+    height: 90%;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .private_body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+  }
+  .private_top {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .toHome {
+    font-size: 1.5rem;
+    width: 7rem;
+    text-decoration: none;
+    color: black;
+  }
+  .private_middle_search {
+    width: 100%;
+    height: 3rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .private_middle_search input {
+    width: 80%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .private_middle_laptop {
+    display: none;
+  }
+  .private_middle_mobile {
+    width: 100%;
+    height: 93%;
+    overflow: scroll;
+    padding-top: 1rem;
+    border-bottom: 1px solid;
+    margin-bottom: 1rem;
+  }
+}

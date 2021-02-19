@@ -1,0 +1,376 @@
+@media (min-width: 376px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: solid 1px;
+  }
+
+  .align {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftBox {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+  }
+  .leftBoxTop {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-bottom: solid 1px;
+  }
+  .leftBoxTop p {
+    font-size: larger;
+  }
+  .form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 90%;
+    font-size: 1rem;
+    overflow: scroll;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .choose {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+  }
+  .leftButton {
+    width: 33.3333333%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: larger;
+  }
+
+  .naver {
+    background-color: #21dc6d;
+    color: white;
+  }
+
+  .kakao {
+    background-color: yellow;
+  }
+
+  .leftButton:hover {
+    border: 2px solid;
+  }
+  .blankBox {
+    width: 3vh;
+  }
+
+  .middleBox {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+    border: 1px solid;
+  }
+
+  .middleBoxTop {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    border-bottom: 1px solid;
+  }
+
+  .middleBoxTop p {
+    font-size: larger;
+  }
+  .middleBoxBottom {
+    height: 90%;
+  }
+
+  .translatedContent {
+    height: 90%;
+    overflow: scroll;
+    border-bottom: 1px solid;
+  }
+  [tooltip]:hover {
+    position: relative;
+  }
+  [tooltip]:hover:after {
+    content: attr(tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 1rem;
+    z-index: 2;
+  }
+  .translatedContent textarea {
+    width: 90%;
+    background-color: floralwhite;
+  }
+
+  .text {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .example {
+    opacity: 0.5;
+  }
+
+  .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .buttonBox {
+    height: 10%;
+    width: 100%;
+    display: flex;
+  }
+  .buttonBox button {
+    width: 50%;
+    font-size: larger;
+    background: none;
+  }
+
+  .buttonBox button:hover {
+    border: 2px solid;
+  }
+
+  .rightBox {
+    width: 30vw;
+    height: 80vh;
+    border: 1px solid;
+  }
+
+  .rightBoxTop {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-bottom: solid 1px;
+  }
+
+  .rightBoxTop p {
+    font-size: larger;
+  }
+
+  span:hover {
+    background-color: deepskyblue;
+  }
+
+  .temp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: solid 1px;
+  }
+
+  .align {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftBox {
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+  }
+
+  .leftBoxTop {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-bottom: solid 1px;
+  }
+
+  .leftBoxTop p {
+    font-size: small;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 90%;
+    font-size: 1rem;
+    overflow: scroll;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .choose {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+  }
+  .leftButton {
+    width: 33.3333333%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: larger;
+  }
+
+  .naver {
+    background-color: #21dc6d;
+    color: white;
+  }
+
+  .kakao {
+    background-color: yellow;
+  }
+
+  .leftButton:hover {
+    border: 2px solid;
+  }
+
+  .blankBox {
+    height: 1rem;
+  }
+
+  .middleBox {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 35vh;
+    border: 1px solid;
+  }
+
+  .middleBoxTop {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    border-bottom: 1px solid;
+  }
+
+  .media-query {
+    display: none;
+  }
+  .middleBoxTop p {
+    font-size: small;
+  }
+
+  .middleBoxBottom {
+    height: 90%;
+  }
+  .translatedContent {
+    font-size: small;
+    height: 90%;
+    overflow: scroll;
+    border-bottom: 1px solid;
+  }
+  .translatedContent textarea {
+    width: 90%;
+    background-color: floralwhite;
+  }
+  .text {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .example {
+    opacity: 0.5;
+  }
+
+  .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonBox {
+    height: 10%;
+    width: 100%;
+    display: flex;
+  }
+
+  .buttonBox button {
+    width: 50%;
+    font-size: small;
+    background: none;
+  }
+
+  .buttonBox button:hover {
+    border: 2px solid;
+  }
+
+  .rightBox {
+    display: none;
+  }
+}
