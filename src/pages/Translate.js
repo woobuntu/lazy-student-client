@@ -12,15 +12,14 @@ function Translate() {
   const [input, setInput] = useState('');
   const [subject, setSubject] = useState('both');
 
-  const translate = (e, subject) => {
+  const translate = async (e, subject) => {
     e.preventDefault();
     hideVirtualKeyboard();
     setSubject(subject);
     setLoad(true);
-    getTranslation(input, subject).then(translated => {
-      setLoad(false);
-      setTranslations(translated);
-    });
+    const translated = await getTranslation(input, subject);
+    setLoad(false);
+    setTranslations(translated);
   };
 
   return (
