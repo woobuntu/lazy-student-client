@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import '../css/Translate.css';
 import hideVirtualKeyboard from 'hide-virtual-keyboard';
 import { Spinner, LeftBox, RightBox, MiddleBox } from '../components/translate';
@@ -29,11 +29,7 @@ function Translate() {
         <p>중국어 네이버, 카카오 번역 + 병음 가져오기</p>
       </div>
       <div className='align'>
-        <LeftBox
-          setInput={setInput}
-          setInput={setInput}
-          translate={translate}
-        />
+        <LeftBox setInput={setInput} translate={translate} />
         <div className='blankBox' />
         <MiddleBox
           translations={translations}

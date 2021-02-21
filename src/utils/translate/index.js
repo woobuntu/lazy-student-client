@@ -1,6 +1,4 @@
-import copy from './copy';
-import getTranslation from './getTranslation';
-import renderingWith from './renderingWith';
-import copyText from './copyText';
-
-export { copy, getTranslation, renderingWith, copyText };
+export { default as copy } from './copy';
+export { default as getTranslation } from './getTranslation';
+export { default as renderingWith } from './renderingWith';
+export { default as copyText } from './copyText';

@@ -1,9 +1,7 @@
-import Spinner from './Spinner';
-import LeftBox from './LeftBox';
-import RightBox from './RightBox';
-import MiddleBox from './MiddleBox';
-import Modify from './Modify';
-import Row from './Row';
-import Origin from './Origin';
-
-export { Spinner, LeftBox, RightBox, MiddleBox, Modify, Row, Origin };
+export { default as Spinner } from './Spinner';
+export { default as LeftBox } from './LeftBox';
+export { default as RightBox } from './RightBox';
+export { default as MiddleBox } from './MiddleBox';
+export { default as Modify } from './Modify';
+export { default as Row } from './Row';
+export { default as Origin } from './Origin';

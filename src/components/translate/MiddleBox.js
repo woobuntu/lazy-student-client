@@ -47,7 +47,7 @@ const MiddleBox = ({ translations, setTranslations, setQuery, subject }) => {
           {translations.map((element, index) => (
             <div
               key={index}
-              className={`text${translations == example ? ' example' : ''}`}
+              className={`text${translations === example ? ' example' : ''}`}
             >
               {renderingWith(makingProps(element, index))}
               <br />
