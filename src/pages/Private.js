@@ -9,7 +9,6 @@ import {
   PrivateSearch,
   PrivateTop,
 } from '../components/Private';
-import { filter } from '../functions';
 
 function Private() {
   const [mobile, setMobile] = useState([]);
@@ -31,9 +30,9 @@ function Private() {
           Authorization: `Bearer ${token}`,
         },
       });
-      setMobile(filter(({ userid }) => userid, data));
-      setGood(filter(({ userid }) => userid, data));
-      setBad(filter(({ userid }) => userid, data));
+      setMobile(data.filter(({ userid }) => userid));
+      setGood(data.filter(({ userid }) => userid));
+      setBad(data.filter(({ userid }) => userid));
     } catch (apiError) {
       alert(apiError);
     }

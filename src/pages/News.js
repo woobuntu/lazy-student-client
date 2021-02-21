@@ -6,7 +6,6 @@ import config from '../config';
 import axios from 'axios';
 import { isAuth, getCookie, getToken, getUserInfo } from '../utils/auth';
 import { KakaoAuth, NewsLaptop, NewsMobile, NewsTop } from '../components/News';
-import { filter } from '../functions';
 
 function News({ history }) {
   const [state, setState] = useState([]);
@@ -31,9 +30,9 @@ function News({ history }) {
         data: { data },
       } = await axios(axiosConfig);
       setState(data);
-      setArrayOfC(filter(element => element.class === '만물상', data));
-      setArrayOfJ(filter(element => element.class === '분수대', data));
-      setArrayOfF(filter(element => element.class === 'fn스트리트', data));
+      setArrayOfC(data.filter(element => element.class === '만물상'));
+      setArrayOfJ(data.filter(element => element.class === '분수대'));
+      setArrayOfF(data.filter(element => element.class === 'fn스트리트'));
     } catch (apiError) {
       alert(apiError);
     }
