@@ -9,7 +9,6 @@ import {
   PrivateSearch,
   PrivateTop,
 } from '../components/Private';
-import { filter } from '../functions';
 
 function Private() {
   const [mobile, setMobile] = useState([]);
